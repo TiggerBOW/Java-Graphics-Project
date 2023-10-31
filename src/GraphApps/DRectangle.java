@@ -43,6 +43,7 @@ public class DRectangle implements Shape{
 	@Override
 	public void setPosition(Vector2 newPosition) {
 		position = newPosition;
+		
 	}
 
 	@Override
@@ -59,6 +60,11 @@ public class DRectangle implements Shape{
 	public void drawGraph(Graphics g) {
 		g.setColor(color);
 	    g.fillRect((int)position.getX(), (int)position.getY(), (int)size.getX(), (int)size.getY());
+	}
+
+	@Override
+	public Vector2 getPosition() {
+		return position;
 	}
 	
 	

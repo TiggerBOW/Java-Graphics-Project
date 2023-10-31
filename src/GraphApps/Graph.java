@@ -6,6 +6,7 @@ import Physics.*;
 
 public interface Graph {
 	void setPosition(Vector2 newPosition);
+	Vector2 getPosition();
 	Vector2 getSize();
 	GraphApp getGraphApp();
 	int getOrderInLayer();

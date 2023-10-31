@@ -58,4 +58,8 @@ public class Image implements Graph{
 	public void drawGraph(Graphics g) {
 		g.drawImage(image, (int)position.getX(), (int)position.getY(),(int)size.getX(),(int)size.getY(),graphApp);
 	}
+	@Override
+	public Vector2 getPosition() {
+		return position;
+	}
 }
